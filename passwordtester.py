@@ -4,6 +4,7 @@ import re
 
 NEW_LIST = ['ABd1234@1', 'a F1#', '2w3E*', '2We3345']
 
+
 def password_checker(new_list):
     """function to check passwords"""
     if isinstance(new_list, list):
@@ -17,5 +18,6 @@ def password_checker(new_list):
 
         for value in pass_list:
             return value
+
 
 print(password_checker(NEW_LIST))
