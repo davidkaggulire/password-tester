@@ -27,7 +27,7 @@ class BaseTestCase(unittest.TestCase):
     def test_string_in_password(self):
         """test for string in password"""
         output = password_checker(PASSWORD_LIST)
-        self.assertRegexpMatches(output, SEARCH, msg='Password should contain a-zA-Z0-9@#$$and whitespace')
+        self.assertRegex(output, SEARCH, msg='Password should contain a-zA-Z0-9@#$$and whitespace')
 
 
 if __name__ == '__main__':
