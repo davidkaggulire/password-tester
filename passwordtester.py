@@ -21,4 +21,6 @@ def password_checker(new_list):
 
 
 print(password_checker(NEW_LIST))
+print("Hello world")
+
 
