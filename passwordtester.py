@@ -20,7 +20,7 @@ def password_checker(new_list):
             return value
 
 
-print(password_checker(NEW_LIST))
+# print(password_checker(NEW_LIST))
 
 
 
