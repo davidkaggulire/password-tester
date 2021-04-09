@@ -1,11 +1,16 @@
 Jenkinsfile (Declarative Pipeline)
 
 pipeline {
-    agent { docker { image 'python:3.6.8' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python passwordtester.py'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'python testing.py'
             }
         }
     }
