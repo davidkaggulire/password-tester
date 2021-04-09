@@ -5,12 +5,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'pip install -r requirements.txt'
                 sh 'python passwordtester.py'
             }
         }
         stage('build') {
             steps {
-                sh 'python testing.py'
+                sh 'pip install -r requirements.txt'
+                sh 'python -m pytest testing.py'
             }
         }
     }
