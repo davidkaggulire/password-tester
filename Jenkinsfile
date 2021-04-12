@@ -9,7 +9,7 @@ pipeline {
                 sh 'python passwordtester.py'
             }
         }
-        stage('build') {
+        stage('test') {
             steps {
                 sh 'pip install -r requirements.txt'
                 sh 'python -m pytest testing.py'
