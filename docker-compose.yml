@@ -1,7 +1,5 @@
 version: '3'
 services:
-    python:
-        build: .
     jenkins:
         image: jenkins/jenkins:lts
         privileged: true
