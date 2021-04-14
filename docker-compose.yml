@@ -11,3 +11,4 @@ services:
         volumes:
         - C:\Users\dkaggs\Desktop\ock:/var/jenkins_home
         - /var/run/docker.sock:/var/run/docker.sock
+        - C:\ProgramData\DockerDesktop:/usr/bin/docker
