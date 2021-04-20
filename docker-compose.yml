@@ -9,6 +9,6 @@ services:
           - 8083:8080
           - 50003:50000
         volumes:
-        - C:\Users\dkaggs\Desktop\ock:/var/jenkins_home
+        - C:\Users\dkaggs\Desktop\test:/var/jenkins_home
         - //var/run/docker.sock:/var/run/docker.sock
-        - C:\ProgramData\DockerDesktop:/usr/bin/docker
+        - /usr/local/bin/docker:/usr/bin/docker
